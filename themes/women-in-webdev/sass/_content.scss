@@ -55,6 +55,7 @@
 /* Footer */
 .site-footer{
 	background-color: $color_background-navy;
+	color: #fff;
 	.footer-wrapper{
 		margin: 0 auto;
 		display: flex;
@@ -72,6 +73,10 @@
 			@include desktop() {
 				flex: 0 1 33%;
 				}
+			button{
+				width: 100%;
+				background-color: $color_feature-coral;
+			}
 		}
 		.footer-sign-up{
 			flex: 0 1 100%;

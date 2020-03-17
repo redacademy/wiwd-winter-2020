@@ -19,13 +19,13 @@
 								<li><a>Muspi Merol</a></li>
 							<ul>	
 					</div><!-- .footer-info -->
-					<div class="footer-info">
+					<div class="footer-socials">
 						<h3>Lorem Ipsum dolor sit amet<h3>
 							<ul class="ul-no-style">
 								<li><a>Lorem Ipsum</a></li>
 								<li><a>Ipsum Lorem </a></li>
-								<li><a>Muspi Merol</a></li>
-							<ul>	
+							</ul>
+							<button>Join the Facebook Group</button>	
 					</div>
 					<div class="footer-sign-up">
 						<form>
