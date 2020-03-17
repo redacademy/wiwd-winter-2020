@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="80px" viewBox="0 0 188 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>dt/Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dt/Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-9.000000, -3.000000)" fill="#000000">
+            <g id="Brackets" transform="translate(37.374356, 35.174682) rotate(-30.000000) translate(-37.374356, -35.174682) translate(7.874356, 12.674682)" font-family="PlayfairDisplay-Regular, Playfair Display" font-size="37" font-weight="normal">
+                <text id="{" transform="translate(21.622821, 22.479392) rotate(44.000000) translate(-21.622821, -22.479392) ">
+                    <tspan x="16.3748212" y="37.9793918">{</tspan>
+                </text>
+                <text id="}" transform="translate(37.193032, 22.851477) rotate(44.000000) translate(-37.193032, -22.851477) ">
+                    <tspan x="31.9450315" y="38.3514774">}</tspan>
+                </text>
+            </g>
+            <text id="WOMEN" font-family="PlayfairDisplay-Black, Playfair Display" font-size="28.8" font-weight="700">
+                <tspan x="56" y="46">WOMEN</tspan>
+            </text>
+            <text id="IN-WEB-DEV" font-family="Poppins-Light, Poppins" font-size="9.6" font-weight="300" letter-spacing="1.8">
+                <tspan x="80" y="58">IN WEB DEV</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
