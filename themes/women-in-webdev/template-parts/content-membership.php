@@ -8,6 +8,44 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+<section>
+		<h3>Menbership Benefits</h3>
+		<div class= "benefits-grid">
+			<artcile class="benefits-container">
+				<div class="benefits-image"></div>
+				<div class="benefits-description"></div>
+			</article>
+			<artcile class="benefits-container">				
+				<div class="benefits-image"></div>
+				<div class="benefits-description"></div>
+			</article>
+			<artcile class="benefits-container">
+				<div class="benefits-image"></div>
+				<div class="benefits-description"></div>
+			</article>
+			<artcile class="benefits-container">
+				<div class="benefits-image"></div>
+				<div class="benefits-description"></div>
+			</article>
+			<artcile class="benefits-container">
+				<div class="benefits-image"></div>
+				<div class="benefits-description"></div>
+			</article>
+			<artcile class="benefits-container">
+				<div class="benefits-image"></div>
+				<div class="benefits-description"></div>
+			</article>
+		</div>
+	</section>
+	<section class="membership">
+
+		<div class="buttons">
+			<button	class="anual"></button>
+			<button class="monthly"></button>
+		</div>
+
+	</section>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>

@@ -11,6 +11,9 @@ get_header(); ?>
 			<h2>Women in Web Dev Learning Circle</h2>
 			<p>The online membership for aspiring female developers to accelerate learning with, <span>mentorship</span> ,<span> support</span> and <span>accountability</span> without the high price tag </p>
 		</div>
+		<div class="header-img">
+			<img src="<?php echo get_site_url();?>/themes/women-in-webdev/assets/illustrations/Membership_Header.png">
+		</div>
 	</section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
