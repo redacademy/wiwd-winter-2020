@@ -54,12 +54,37 @@
 
 /* Footer */
 .site-footer{
-	display: flex;
 	background-color: $color_background-navy;
-	.site-info{
-		flex: 0 1 50%;
+	.footer-wrapper{
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: $desktop_width;
+		padding: $base__space-unit/2;
+		.footer-info{
+			flex: 0 1 50%;
+			@include desktop() {
+				flex: 0 1 33%;
+				}
+		}
+		.footer-socials{
+			flex: 0 1 50%;
+			@include desktop() {
+				flex: 0 1 33%;
+				}
+		}
+		.footer-sign-up{
+			flex: 0 1 100%;
+			@include desktop() {
+				flex: 0 1 33%;
+				}
+		}
 	}
-	.site-socials{
-		flex: 0 1 50%;
+	input[type="email"]{
+		width: 100%;
+		margin-bottom: $base__space-unit/1.25;
+	}
+	a{
+		color: $color_feature-coral;
 	}
 }
