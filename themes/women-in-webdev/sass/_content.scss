@@ -60,18 +60,23 @@
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-evenly;
 		max-width: $desktop_width;
 		padding: $base__space-unit/2;
+		// adds padding to just the children of footer-wrapper
+		& > *{
+			padding: 0 $base__space-unit/2;
+		}
 		.footer-info{
 			flex: 0 1 50%;
 			@include desktop() {
-				flex: 0 1 33%;
+				flex: 0 1 30%;
 				}
 		}
 		.footer-socials{
 			flex: 0 1 50%;
 			@include desktop() {
-				flex: 0 1 33%;
+				flex: 0 1 30%;
 				}
 			button{
 				width: 100%;
@@ -81,7 +86,7 @@
 		.footer-sign-up{
 			flex: 0 1 100%;
 			@include desktop() {
-				flex: 0 1 33%;
+				flex: 0 1 35%;
 				}
 		}
 	}
