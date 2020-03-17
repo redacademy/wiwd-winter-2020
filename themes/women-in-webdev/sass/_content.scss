@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 //test
 /* Posts and pages */
-
+body{background-color:rgb(37, 35, 35);}
 .sticky {
 	display: block;
 }
@@ -50,4 +50,16 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+/* Footer */
+.site-footer{
+	display: flex;
+	background-color: $color_background-navy;
+	.site-info{
+		flex: 0 1 50%;
+	}
+	.site-socials{
+		flex: 0 1 50%;
+	}
 }
