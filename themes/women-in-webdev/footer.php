@@ -20,14 +20,15 @@
 								<li><a>Muspi Merol</a></li>
 							<ul>	
 					</div><!-- .footer-info -->
-					<div class="footer-socials">
+					<!-- <div class="footer-socials">
 						<h3>Lorem Ipsum dolor sit amet<h3>
 							<ul class="ul-no-style">
 								<li><a>Lorem Ipsum</a></li>
 								<li><a>Ipsum Lorem </a></li>
 							</ul>
 							<button>Join the Facebook Group</button>	
-					</div>
+					</div> -->
+					<?php get_sidebar('contact')?>
 					<div class="footer-sign-up">
 						<form>
 						<label for="email"><h3>Sign Up For Our Newsletter<h3></label>
