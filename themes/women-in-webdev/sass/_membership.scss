@@ -1,0 +1,21 @@
+.page-membership {
+  .entry-title {
+    opacity: 0;
+  }
+  .banner-image {
+    .wp-block-column:first-child {
+      order: 2;
+    }
+    .wp-block-column:nth-child(2) {
+      order: 1;
+    }
+    @include desktop {
+      .wp-block-column:first-child {
+        order: 1;
+      }
+      .wp-block-column:nth-child(2) {
+        order: 2;
+      }
+    }
+  }
+}
