@@ -10,6 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class ="max-width-container">
 				<div class="footer-wrapper">
 					<div class="footer-info">
 						<h3>Lorem Ipsum dolor sit amet<h3>
@@ -36,6 +37,7 @@
 
 					</div>
 				</div>
+			</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
