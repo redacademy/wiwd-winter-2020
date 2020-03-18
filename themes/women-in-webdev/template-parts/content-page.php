@@ -9,8 +9,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+<<<<<<< HEAD
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!--entry-header -->
+=======
+		<!-- <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
+	</header><!-- .entry-header -->
+>>>>>>> bc1e4caeb26ac677033671b02089f63c34d9e6ea
 
 	<div class="entry-content">
 		<?php the_content(); ?>
