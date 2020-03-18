@@ -1,7 +1,10 @@
 .ul-no-style {
 		list-style: none;
 		margin: 0;
-		padding-left: 0;
+        padding-left: 0;
+        li{
+            padding: $base__space-unit/2 0 0 0;
+        }
 }
 .max-width-container{
 	margin: 0 auto;
