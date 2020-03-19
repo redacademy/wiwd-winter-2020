@@ -8,14 +8,14 @@
 
 // Add your custom taxonomies here...
 // Register Custom Taxonomy
-function inhabitent_product_taxonomy()
+function pending_job_taxonomy()
 {
 
     $labels = array(
-        'name'                       => _x('Job Taxonomies', 'Taxonomy General Name', 'text_domain'),
-        'singular_name'              => _x('Job Taxonomy', 'Taxonomy Singular Name', 'text_domain'),
-        'menu_name'                  => __('Job Taxonomy', 'text_domain'),
-        'all_items'                  => __('All Jobs', 'text_domain'),
+        'name'                       => _x('Pending-Job Taxonomies', 'Taxonomy General Name', 'text_domain'),
+        'singular_name'              => _x('Pending-Job Taxonomy', 'Taxonomy Singular Name', 'text_domain'),
+        'menu_name'                  => __('Pending-Job Taxonomy', 'text_domain'),
+        'all_items'                  => __('All Pending-Jobs', 'text_domain'),
         'parent_item'                => __('Parent Item', 'text_domain'),
         'parent_item_colon'          => __('Parent Item:', 'text_domain'),
         'new_item_name'              => __('New Item Name', 'text_domain'),
@@ -43,6 +43,6 @@ function inhabitent_product_taxonomy()
         'show_tagcloud'              => true,
         'show_in_rest'               => true,
     );
-    register_taxonomy('product_taxonomy', array('product_type'), $args);
+    register_taxonomy('pending_job_taxonomy', array('pending_job'), $args);
 }
-add_action('init', 'inhabitent_product_taxonomy', 0);
+add_action('init', 'pending_job_taxonomy', 0);
