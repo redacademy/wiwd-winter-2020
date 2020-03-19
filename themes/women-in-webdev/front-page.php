@@ -22,5 +22,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_sidebar('sponsor');?>
 <?php get_footer(); ?>
