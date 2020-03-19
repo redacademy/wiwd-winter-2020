@@ -31,6 +31,7 @@ access_log
 plugins/*
 !plugins/women-in-webdev-functionality/
 !plugins/contact-us-widget/
+!plugins/pending-job-posts/
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
