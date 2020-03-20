@@ -1,15 +1,53 @@
 .page-membership {
-  .entry-title {
-    opacity: 0;
+  .entry-header {
+    visibility: hidden;
   }
-  .banner-image {
-    .wp-block-column:first-child {
-      order: 2;
+  .entry-content {
+    margin-top: 0px;
+  }
+  .entry-title {
+    margin: 0px;
+    height: 0px;
+  }
+
+  .banner {
+    padding: 0 1rem;
+    background-color: $color_background-body;
+    padding-bottom: 3rem;
+    .join-mobile {
+      font-size: 3rem;
+      margin-bottom: 0rem;
     }
-    .wp-block-column:nth-child(2) {
-      order: 1;
+    .banner-title {
+      margin-top: 0rem;
+    }
+    .banner-blurb {
+      strong {
+        font-weight: normal;
+      }
+    }
+    .wp-block-column {
+    }
+    .wp-block-columns {
+      justify-content: center;
+      align-content: center;
+    }
+    .wp-block-column:first-child {
+      order: 2 !important;
+    }
+    .wp-block-column:last-child {
+      order: 1 !important;
+    }
+    .banner-image {
+      margin: 0 0 auto;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
     }
     @include desktop {
+      .join-mobile {
+        visibility: hidden;
+      }
       .wp-block-column:first-child {
         order: 1;
       }
