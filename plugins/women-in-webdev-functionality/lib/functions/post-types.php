@@ -71,49 +71,44 @@ function inhabitent_cpt_product()
 }
 add_action('init', 'inhabitent_cpt_product', 0);
 
-function scholarships() {
+// Register Custom Post Type
+function scholarship() {
 
 	$labels = array(
-		'name'                  => _x( 'scholarships', 'Post Type General Name', 'sholashii post' ),
-		'singular_name'         => _x( 'scholarship', 'Post Type Singular Name', 'sholashii post' ),
-		'menu_name'             => __( 'Scholarships', 'sholashii post' ),
-		'name_admin_bar'        => __( 'scholarship', 'sholashii post' ),
-		'archives'              => __( 'scholarships Archives', 'sholashii post' ),
-		'attributes'            => __( 'scholarship Attributes', 'sholashii post' ),
-		'parent_item_colon'     => __( 'Parent Item:', 'sholashii post' ),
-		'all_items'             => __( 'All scholarships', 'sholashii post' ),
-		'add_new_item'          => __( 'Add New scholarship', 'sholashii post' ),
-		'add_new'               => __( 'Add new', 'sholashii post' ),
-		'new_item'              => __( 'New scholarship', 'sholashii post' ),
-		'edit_item'             => __( 'Edit scholarship', 'sholashii post' ),
-		'update_item'           => __( 'Update scholarship', 'sholashii post' ),
-		'view_item'             => __( 'View scholarship', 'sholashii post' ),
-		'view_items'            => __( 'View scholarships', 'sholashii post' ),
-		'search_items'          => __( 'Search scholarships', 'sholashii post' ),
-		'not_found'             => __( 'Not found', 'sholashii post' ),
-		'not_found_in_trash'    => __( 'Not found in Trash', 'sholashii post' ),
-		'featured_image'        => __( 'Featured Image', 'sholashii post' ),
-		'set_featured_image'    => __( 'Set featured image', 'sholashii post' ),
-		'remove_featured_image' => __( 'Remove featured image', 'sholashii post' ),
-		'use_featured_image'    => __( 'Use as featured image', 'sholashii post' ),
-		'insert_into_item'      => __( 'Insert into item', 'sholashii post' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'sholashii post' ),
-		'items_list'            => __( 'Items list', 'sholashii post' ),
-		'items_list_navigation' => __( 'Items list navigation', 'sholashii post' ),
-		'filter_items_list'     => __( 'Filter items list', 'sholashii post' ),
-	);
-	$rewrite = array(
-		'slug'                  => 'post_typescholarships',
-		'with_front'            => true,
-		'pages'                 => true,
-		'feeds'                 => true,
+		'name'                  => _x( 'scholarships', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'scholarship', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Scholarship Types', 'text_domain' ),
+		'name_admin_bar'        => __( 'Scholarship Type', 'text_domain' ),
+		'archives'              => __( 'Scholarship Archives', 'text_domain' ),
+		'attributes'            => __( 'Scholarship Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Scholarship:', 'text_domain' ),
+		'all_items'             => __( 'All Scholarship', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Scholarship', 'text_domain' ),
+		'add_new'               => __( 'Add Scholarship', 'text_domain' ),
+		'new_item'              => __( 'New Scholarship', 'text_domain' ),
+		'edit_item'             => __( 'Edit Scholarship', 'text_domain' ),
+		'update_item'           => __( 'Update Scholarship', 'text_domain' ),
+		'view_item'             => __( 'View Scholarship', 'text_domain' ),
+		'view_items'            => __( 'View Scholarship', 'text_domain' ),
+		'search_items'          => __( 'Search Scholarship', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Scholarship', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Scholarship', 'text_domain' ),
+		'items_list'            => __( 'Scholarships list', 'text_domain' ),
+		'items_list_navigation' => __( 'Scholarships list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Scholarships list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'scholarship', 'sholashii post' ),
-		'description'           => __( 'This is a for post about scholarships', 'sholashii post' ),
+		'label'                 => __( 'scholarship', 'text_domain' ),
+		'description'           => __( 'post for scholarships', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		'supports'              => array( 'title', 'editor', 'custom-fields' ),
+		'taxonomies'            => array( 'location', ' url', ' scholarship-category' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -125,14 +120,13 @@ function scholarships() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'rewrite'               => $rewrite,
 		'capability_type'       => 'post',
 		'show_in_rest'          => true,
 	);
-	register_post_type( 'scholarships', $args );
+	register_post_type( 'scholarship', $args );
 
 }
-add_action( 'init', 'scholarships', 0 );
+add_action( 'init', 'scholarship', 0 );
 
 // Register Custom Post Type for Training 
 function training_posts() {
