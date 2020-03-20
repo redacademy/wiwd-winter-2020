@@ -3,7 +3,9 @@
 --------------------------------------------------------------*/
 //test
 /* Posts and pages */
-// body{background-color:rgb(37, 35, 35);}
+body{
+background-color: $color__background-pre;
+}
 .sticky {
 	display: block;
 }
