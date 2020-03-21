@@ -56,4 +56,17 @@
       }
     }
   }
+  .benefits-container {
+    padding: 0 1rem;
+    .benefits-image {
+      text-align: center;
+      figcaption {
+        margin: 0;
+      }
+    }
+  }
+
+  .inner-title {
+    padding: 0 1rem;
+  }
 }
