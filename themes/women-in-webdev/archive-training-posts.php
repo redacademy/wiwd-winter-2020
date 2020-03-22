@@ -53,5 +53,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar('blog'); ?>
+
 <?php get_footer(); ?>
