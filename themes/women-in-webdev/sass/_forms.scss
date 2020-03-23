@@ -69,3 +69,12 @@ textarea {
 		font-size: 1.5rem;
 	}
 }
+.gf_progressbar{
+	display: none;
+}
+.gform_next_button{
+	width: 50% !important;
+	@include desktop(){
+		width: 25% !important;
+	}
+}
