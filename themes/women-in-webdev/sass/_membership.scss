@@ -1,4 +1,6 @@
 .page-membership {
+  background-color: $color_background-light;
+
   .entry-header {
     visibility: hidden;
   }
@@ -73,10 +75,6 @@
     }
   }
 
-  .inner-title {
-    padding: 0 1rem;
-  }
-
   .join-banner {
     padding: 2rem 1rem 2rem 1rem;
     background-color: $color_background-navy;
@@ -114,12 +112,22 @@
       background-position: top;
     }
   }
-  .entry-content {
-    .pad {
-      padding: 1rem;
-    }
+}
+.entry-content {
+  .inner-title {
+    margin: 1rem !important;
   }
-  .wp-block-column {
-    margin: 1rem;
+  .pad {
+    padding: 1rem;
   }
+}
+.founder-image {
+  figcaption {
+    visibility: hidden;
+    height: 0px;
+    display: none;
+  }
+}
+.founder-blurb {
+  margin: 1rem;
 }
