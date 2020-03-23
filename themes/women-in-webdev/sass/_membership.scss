@@ -26,8 +26,6 @@
         font-weight: normal;
       }
     }
-    .wp-block-column {
-    }
     .wp-block-columns {
       justify-content: center;
       align-content: center;
@@ -56,17 +54,72 @@
       }
     }
   }
-  .benefits-container {
+  .benefits-container,
+  .course-container {
     padding: 0 1rem;
     .benefits-image {
       text-align: center;
-      figcaption {
-        margin: 0;
+      margin: 0px !important;
+      img {
+        object-fit: cover;
+        width: 100%;
       }
+      figcaption {
+        margin: 0px;
+      }
+    }
+    h3 {
+      margin-top: 0px !important;
     }
   }
 
   .inner-title {
     padding: 0 1rem;
+  }
+
+  .join-banner {
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: $color_background-navy;
+    color: white;
+    .annual-button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+      a {
+        background-color: $color_feature-coral;
+      }
+    }
+    .monthly-button {
+      display: flex;
+      justify-content: center;
+      a {
+        background-color: $color_feature-teal-light;
+      }
+    }
+  }
+}
+.light-teal-color {
+  color: $color_feature-teal-light;
+}
+.course-container {
+  .course-image {
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 0px;
+      max-width: 100%;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background-position: top;
+    }
+  }
+  .entry-content {
+    .pad {
+      padding: 1rem;
+    }
+  }
+  .wp-block-column {
+    margin: 1rem;
   }
 }
