@@ -25,16 +25,18 @@ get_header(); ?>
 			<section class="post-layout">
 
 					<div class="post">
-					
+
 						<div class = "post-location">
 							<?php if( get_field('location_training') ): ?>
 								<?php the_field('location_training'); ?>
 							<?php endif; ?>
 						</div>
 
-						<div class="post-meta">
+						<!-- <div class="post-meta">
 								
-						</div>
+						</div>  -->
+
+						<button class="apply"></button>
 
 					</div>
 
