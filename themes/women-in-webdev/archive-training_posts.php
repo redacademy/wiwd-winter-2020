@@ -5,10 +5,13 @@
  * @package Women_In_Webdev_Theme
  */
 
+
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -20,16 +23,12 @@ get_header(); ?>
 				?>
 
 			<section class="post-layout">
+
 					<div class="post">
-	
-						<div class="post-title"> 	
-							<?php the_title(); ?>
-						</div>
-
-
+					
 						<div class = "post-location">
-							<?php if( get_field('location') ): ?>
-								<?php the_field('location'); ?>
+							<?php if( get_field('location_training') ): ?>
+								<?php the_field('location_training'); ?>
 							<?php endif; ?>
 						</div>
 
