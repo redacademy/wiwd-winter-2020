@@ -12,21 +12,22 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="banner-image">
+			<img src="<?php echo get_template_directory_uri();?>/assets/illustrations/Training_Header.svg">
+		</div>	
 
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+	<div class="post-layout">
 			<?php the_title( '<h2 class="entry-title"> ', '</h2>' ); ?>
 
 
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
-
-			<section class="post-layout">
 
 					<div class="post">
 
@@ -36,13 +37,12 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 
+						 <button class="apply-btn">Apply</button>
 					</div>
-
+			</div> 
 
 			<?php endwhile; ?>
-	</section>
 		
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
