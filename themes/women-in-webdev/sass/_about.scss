@@ -1,5 +1,5 @@
 .stacked-column {
-  background-color: #f8f7f7;
+  background-color: $color_background-body;
 }
 
 .page-about {
@@ -39,7 +39,6 @@
     justify-content: center;
   }
   @include desktop {
-
     .wp-block-column:first-child {
       order: 1;
     }
@@ -97,7 +96,3 @@
 .jenny-text {
   margin: 1rem;
 }
-
-
-
-
