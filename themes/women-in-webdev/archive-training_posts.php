@@ -18,9 +18,13 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<?php the_title( '<h2 class="entry-title"> ', '</h2>' ); ?>
+
+
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
+
 
 			<section class="post-layout">
 
@@ -31,12 +35,6 @@ get_header(); ?>
 								<?php the_field('location_training'); ?>
 							<?php endif; ?>
 						</div>
-
-						<!-- <div class="post-meta">
-								
-						</div>  -->
-
-						<button class="apply"></button>
 
 					</div>
 
