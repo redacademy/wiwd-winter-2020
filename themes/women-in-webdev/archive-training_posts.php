@@ -20,7 +20,8 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="training-page">
+<div class= "post-container"></div>
 	<div class="post-layout">
 			<?php the_title( '<h2 class="entry-title"> ', '</h2>' ); ?>
 
@@ -37,7 +38,9 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 
-						 <button class="apply-btn">Apply</button>
+						<div class="btn-flex">
+						 	<button class="apply-btn"><span class="purple-text">Apply</span></button>
+						</div>
 					</div>
 			</div> 
 
@@ -46,9 +49,9 @@ get_header(); ?>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php endif; ?>
 
-		<?php endif; ?>
-
+			</div><!-- #training-page -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
