@@ -1,6 +1,9 @@
 .page-membership {
   background-color: $color_background-light;
 
+  @include desktop {
+    width: 1400px;
+  }
   .entry-header {
     visibility: hidden;
   }
@@ -22,10 +25,16 @@
     }
     .banner-title {
       margin-top: 0rem;
+      @include desktop {
+        font-size: 3rem;
+      }
     }
     .banner-blurb {
       strong {
         font-weight: normal;
+        @include desktop {
+          font-weight: bold;
+        }
       }
     }
     .wp-block-columns {
@@ -45,14 +54,38 @@
       justify-content: center;
     }
     @include desktop {
+      display: flex;
+      justify-content: center;
+      min-width: $desktop-width;
+      h2 {
+        font-size: 2rem;
+      }
+      .wp-block-columns {
+        justify-content: center;
+      }
+      .banner-image {
+        width: 330px;
+      }
+
       .join-mobile {
         visibility: hidden;
       }
       .wp-block-column:first-child {
-        order: 1;
+        order: 1 !important;
       }
-      .wp-block-column:nth-child(2) {
-        order: 2;
+      .wp-block-column:last-child {
+        order: 2 !important;
+        // margin-left: 0px;
+        // width: fit-content;
+        img {
+          object-position: center;
+        }
+      }
+      .wp-block-group__inner-container {
+        width: $desktop-width;
+      }
+      .banner-image {
+        justify-content: center;
       }
     }
   }
@@ -94,10 +127,24 @@
         background-color: $color_feature-teal-light;
       }
     }
+    @include desktop {
+      .join-buttons {
+        justify-content: space-around;
+        .annual-button {
+          justify-content: right;
+        }
+        .monthly-button {
+          justify-content: left;
+        }
+      }
+    }
   }
 }
 .light-teal-color {
   color: $color_feature-teal-light;
+  @include desktop {
+    color: black;
+  }
 }
 .course-container {
   .course-image {
@@ -109,16 +156,26 @@
       width: 100%;
       height: 200px;
       object-fit: cover;
-      background-position: top;
+      background-position: bottom;
+    }
+  }
+  @include desktop {
+    .course-image {
+      margin: 0px;
     }
   }
 }
 .entry-content {
   .inner-title {
     margin: 1rem !important;
-  }
-  .pad {
-    padding: 1rem;
+    @include desktop {
+      margin-left: 188px !important;
+
+      h4 {
+        margin: 0px;
+        font-size: 1rem;
+      }
+    }
   }
 }
 .founder-image {
@@ -130,4 +187,52 @@
 }
 .founder-blurb {
   margin: 1rem;
+}
+.entry-content {
+  @include desktop {
+    .inner-title {
+      margin-top: 40px !important;
+      margin-bottom: 40px !important;
+      margin-left: (1400px-$desktop-width)/2;
+    }
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    .benefits-column {
+      margin-left: (1400px-$desktop-width)/2;
+      margin-right: (1400px-$desktop-width)/2;
+
+      max-width: $desktop-width;
+      .benefits-container {
+        max-width: $desktop-width/3;
+        .benefits-image {
+          height: 360px;
+
+          img {
+            max-width: $desktop-width/3;
+            height: 330px;
+          }
+        }
+        .benefits-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .wp-block-columns:last-child {
+    padding-top: 70px;
+  }
+  .founder-blurb {
+    margin: 0;
+    h3 {
+      margin-top: 0rem;
+      font-size: 2rem;
+    }
+  }
+  .founder-image {
+    margin-top: 0rem;
+  }
+}
+.note-from-founder {
+  color: $color_feature-teal-light;
 }
