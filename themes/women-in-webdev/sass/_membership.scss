@@ -1,8 +1,14 @@
 .page-membership {
-  background-color: $color_background-light;
+  background-color: black;
 
   @include desktop {
     width: 1400px;
+    display: flex;
+    justify-content: center;
+    .site {
+      width: $desktop-width;
+      background-color: $color_background-light;
+    }
   }
   .entry-header {
     visibility: hidden;
@@ -75,8 +81,6 @@
       }
       .wp-block-column:last-child {
         order: 2 !important;
-        // margin-left: 0px;
-        // width: fit-content;
         img {
           object-position: center;
         }
@@ -168,8 +172,6 @@
     .inner-title {
       margin: 1rem !important;
       @include desktop {
-        margin-left: 188px !important;
-
         h4 {
           margin: 0px;
           font-size: 1rem;
@@ -192,15 +194,11 @@
       .inner-title {
         margin-top: 40px !important;
         margin-bottom: 40px !important;
-        margin-left: (1400px-$desktop-width)/2;
       }
       display: flex;
       align-content: center;
       flex-direction: column;
       .benefits-column {
-        margin-left: (1400px-$desktop-width)/2;
-        margin-right: (1400px-$desktop-width)/2;
-
         max-width: $desktop-width;
         .benefits-container {
           max-width: $desktop-width/3;
