@@ -1,11 +1,13 @@
 .page-front-page {
-  background-color: black;
-  @include desktop {
-    width: 1400px;
-    display: flex;
-    justify-content: center;
-    .site {
-      background-color: $color_background-light;
+  //   background-color: black;
+  //   @include desktop {
+  //     width: 1400px;
+  //     display: flex;
+  //     justify-content: center;
+  //   }
+  .site {
+    background-color: $color_background-light;
+    @include desktop {
       width: $desktop-width;
     }
   }
@@ -24,7 +26,10 @@
     .wp-block-group__inner-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      @include desktop {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
       .banner-title {
         grid-column: 1/3;
         grid-row: 1/2;
@@ -77,16 +82,28 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       .mission-title {
-        background-color: $color_feature-blue;
+        background-color: $color_background-navy;
         color: white;
         grid-column: 2/3;
         grid-row: 1/4;
         padding-left: 1rem;
         padding-top: 1rem;
+        .wp-block-group__inner-container:first-child {
+          display: block;
+        }
+        @include desktop {
+          text-align: center;
+          text-justify: center;
+        }
         h2 {
           width: 100%;
           font-size: 1.5rem;
           word-wrap: none;
+          @include desktop {
+            font-size: 3rem;
+            color: $color_feature-coral;
+            width: 100%;
+          }
         }
       }
       .mission-image {
@@ -102,6 +119,11 @@
         grid-column: 1/3;
         grid-row: 4/5;
         padding: 0 1rem;
+        @include desktop {
+          grid-column: 2/3;
+          grid-row: 2/3;
+          color: lightgray;
+        }
       }
     }
   }
