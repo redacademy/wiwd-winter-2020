@@ -21,36 +21,40 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 <div class="training-page">
-<div class= "post-container"></div>
-	<div class="post-layout">
+	<div class= "post-container">
+
+		<div class="post-layout">
 			<?php the_title( '<h2 class="entry-title"> ', '</h2>' ); ?>
 
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<h3 class = "post-location">
+					<?php if( get_field('location_training') ): ?>
+						<?php the_field('location_training'); ?>
+						<?php endif; ?>
+					</h3>
 
-					<div class="post">
+						<?php
+							get_template_part( 'template-parts/content' );
+						?>
 
-						<div class = "post-location">
-							<?php if( get_field('location_training') ): ?>
-								<?php the_field('location_training'); ?>
-							<?php endif; ?>
+						<div class="post">
+
+							<div class="btn-flex">
+								<button class="apply-btn"><span class="purple-text">Apply</span></button>
+							</div>
 						</div>
 
-						<div class="btn-flex">
-						 	<button class="apply-btn"><span class="purple-text">Apply</span></button>
-						</div>
-					</div>
-			</div> 
+					</div> <!-- #post-layout -->
 
-			<?php endwhile; ?>
-		
-		<?php else : ?>
+				<?php endwhile; ?>
+					
+					<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-			<?php endif; ?>
+						<?php get_template_part( 'template-parts/content', 'none' ); ?>
+						<?php endif; ?>
 
+				
+				</div><!-- #post-container -->
 			</div><!-- #training-page -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
