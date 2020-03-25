@@ -1,10 +1,51 @@
+// .post-container {
 
-.post-layout{
-  border: 1px solid black;
+// }
+.training-page {
+  background-color: $color_background-body;
+}
+.entry-title {
+  font-size: 24px;
 }
 
-.apply-btn{
-  border-radius: 7px;
-  border: 3px solid  #7255cd;
+@include desktop {
+  font-size: 36px;
 }
 
+.post-location {
+  font-size: 16px;
+  font-weight: bold;
+  color: $color_feature-teal-medium;
+}
+.post-layout {
+  margin: 20px 20px;
+  padding: 1rem;
+  background-color: $color_background-light;
+}
+@include desktop {
+  // .post-layout {
+    
+  //   // max-width: 500px;
+  //   // margin: 20px 100px;
+  //   // max-width: 1000px;
+  // }
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+}
+.apply-btn {
+  border-radius: 4px;
+  border: 3px solid $color_feature-purple-regular;
+  background: none;
+  padding: 0.5rem 3rem;
+  margin: 1rem;
+}
+@include desktop {
+  order: 2;
+}
+
+.purple-text {
+  color: $color_feature-purple-regular;
+}
