@@ -1,6 +1,6 @@
 <!-- This file is used to markup the public-facing widget. -->
 <div class="find-us">
-    
+     <div class ="social-icons">
         <?php if (strlen(trim($linkedin)) > 0) : ?>
             <?php echo "<a href = '$linkedin'>"?><i class="fab fa-linkedin-in"></i></a>
         <?php endif; ?>
@@ -17,10 +17,13 @@
         <?php if (strlen(trim($youtube)) > 0) : ?>
             <?php echo "<a href = '$youtube'>"?><i class="fab fa-youtube"></i></a>
         <?php endif; ?>
-    <p>
-        <?php if (strlen(trim($facebook_group)) > 0) : ?>
-          <?php echo "<a href = '$facebook_group'>"?><button>test</button> </a>
-        <?php endif; ?>
-    </p>
-    
+
+     </div>
+     <div class="social-button">         
+        <p>
+            <?php if (strlen(trim($facebook_group)) > 0) : ?>
+            <?php echo "<a href = '$facebook_group'>"?><button>test</button> </a>
+            <?php endif; ?>
+        </p>
+     </div>
 </div>

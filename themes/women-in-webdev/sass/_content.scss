@@ -69,14 +69,21 @@ background-color: $color__background-pre;
 		.footer-info{
 			flex: 0 1 50%;
 			@include desktop() {
-				flex: 0 1 30%;
+				flex: 0 1 33%;
 				}
 		}
-		.footer-socials{
+		.find-us-class{
 			flex: 0 1 50%;
+			text-align: center;
 			@include desktop() {
-				flex: 0 1 30%;
+				flex: 0 1 33%;
+				text-align: left;
 				}
+			i{
+				fill: #fff;
+				color: #fff;
+				padding: 0 $base__space-unit /2 ;
+			}	
 			button{
 				width: 100%;
 				background-color: $color_feature-coral;
@@ -85,7 +92,7 @@ background-color: $color__background-pre;
 		.footer-sign-up{
 			flex: 0 1 100%;
 			@include desktop() {
-				flex: 0 1 35%;
+				flex: 0 1 33%;
 				}
 		}
 	}
@@ -97,5 +104,6 @@ background-color: $color__background-pre;
 		color: $color_feature-coral;
 	}
 }
+
 
 
