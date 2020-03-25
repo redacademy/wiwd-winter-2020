@@ -2,20 +2,20 @@
 <div class="find-us">
     
         <?php if (strlen(trim($linkedin)) > 0) : ?>
-            <?php echo "<a href = '$linkedin'>"?> <span><i class="fas fa-phone"></i></span> </a>
+            <?php echo "<a href = '$linkedin'>"?><i class="fab fa-linkedin-in"></i></a>
         <?php endif; ?>
 
     
         <?php if (strlen(trim($facebook)) > 0) : ?>
-            <?php echo "<a href = '$facebook'>"?> <span><i class="fas fa-phone"></i></span> </a>
+            <?php echo "<a href = '$facebook'>"?><i class="fab fa-facebook-f"></i></a>
         <?php endif; ?>
     
         <?php if (strlen(trim($twitter)) > 0) : ?>
-            <?php echo "<a href = '$twitter'>"?> <span><i class="fas fa-phone"></i></span> </a>
+            <?php echo "<a href = '$twitter'>"?><i class="fab fa-twitter"></i></a>
         <?php endif; ?>
     
         <?php if (strlen(trim($youtube)) > 0) : ?>
-            <?php echo "<a href = '$youtube'>"?> <span><i class="fas fa-phone"></i></span> </a>
+            <?php echo "<a href = '$youtube'>"?><i class="fab fa-youtube"></i></a>
         <?php endif; ?>
     <p>
         <?php if (strlen(trim($facebook_group)) > 0) : ?>
