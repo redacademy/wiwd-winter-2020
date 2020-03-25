@@ -29,6 +29,7 @@ get_header(); ?>
 
 				<h3 class = "post-location">
 					<?php if( get_field('location_training') ): ?>
+					
 						<?php the_field('location_training'); ?>
 						<?php endif; ?>
 					</h3>

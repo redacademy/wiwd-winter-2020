@@ -32,6 +32,17 @@
   background: none;
   padding: 0.6rem 3.5rem;
   margin: 1rem;
+
+  &:hover {
+    border-color: $color_feature-purple-light;
+    box-shadow: none;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $color_feature-purple-light;
+    box-shadow: none;
+  }
 }
 @include desktop {
   order: 2;
