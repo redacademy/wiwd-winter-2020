@@ -21,6 +21,7 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+
 <div class="training-page">
 	<div class= "post-container">
 
@@ -41,8 +42,14 @@ get_header(); ?>
 						<div class="post">
 
 							<div class="btn-flex">
-								<button class="apply-btn"><span class="purple-text">Apply</span></button>
-							</div>
+		
+								
+									<a class= "apply-btn" href= "<?php if( get_field('external_link') ): ?>
+											<?php the_field('external_link'); ?>
+									<?php endif; ?>" target="_blank">Apply</a>
+							
+							
+							</div><!-- #btn-flex -->
 						</div>
 
 					</div> <!-- #post-layout -->

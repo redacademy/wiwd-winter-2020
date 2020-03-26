@@ -36,6 +36,8 @@
   background: none;
   padding: 0.9rem 8rem;
   margin: 1rem;
+  text-decoration: none;
+  color: $color_feature-purple-regular;
 
   &:hover {
     border-color: $color_feature-purple-light;
@@ -48,7 +50,7 @@
     box-shadow: none;
   }
   @include desktop {
-    padding: 0.6rem 3.5rem;
+    padding: 0.3rem 3.9rem;
     margin: 1rem;
     order: 2;
   }
