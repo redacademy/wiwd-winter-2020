@@ -69,13 +69,19 @@ background-color: $color__background-pre;
 		.footer-info{
 			flex: 0 1 50%;
 			@include desktop() {
-				flex: 0 1 33%;
+				flex: 0 1 32%;
 				}
-			h3{
+			h2{
 				margin-bottom: 0;
 				&:nth-child(2){
 					margin-top: 0;
 				}
+			}
+			p{
+				margin: 0 0 $base__space-unit /4;
+			}
+			a{
+				text-decoration: none;
 			}
 			li{
 				&:first-child{
@@ -87,7 +93,7 @@ background-color: $color__background-pre;
 			flex: 0 1 50%;
 			text-align: center;
 			@include desktop() {
-				flex: 0 1 33%;
+				flex: 0 1 32%;
 				text-align: left;
 				}
 			i{
@@ -107,8 +113,12 @@ background-color: $color__background-pre;
 		}
 		.footer-sign-up{
 			flex: 0 1 100%;
+			word-wrap: break-word;
+			.medium{
+				width: 100% !important;
+			}
 			@include desktop() {
-				flex: 0 1 33%;
+				flex: 0 1 35%;
 				}
 		}
 	}
