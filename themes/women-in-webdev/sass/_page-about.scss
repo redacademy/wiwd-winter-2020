@@ -1,3 +1,7 @@
+.about-banner {
+  background-color: $color_background-body;
+}
+
 .stacked-column {
   background-color: $color_background-body;
 }
@@ -6,29 +10,36 @@
   background-color: $color_background-light;
 }
 
+.about-text-column {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  text-align: left;
+}
+
 .about-column-container {
   display: flex;
 }
 
 .support-title {
-  font-size: 36px;
+  font-size: 32px;
+  text-align: center;
+}
+@include desktop {
+  font-size: 32px;
+}
+
+.stacked-column-text {
+  text-align: center;
 }
 
 .about-h3 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .wp-block-button__link {
   padding: 0.2rem 1.5rem;
 }
-
-// .join-btn {
-//   border-radius: 4px;
-//   border: 3px solid $color_feature-purple-regular;
-//   background: none;
-//   padding: 0.6rem 0.5rem;
-//   margin: 1rem;
-// }
 
 .membership-container {
   margin-bottom: 0px;
@@ -39,6 +50,14 @@
 .newsletter-container {
   margin-bottom: 150px;
   background-color: $color_background-body;
+
+  .gform_button {
+    border-radius: 4px;
+    border: 3px solid $color_feature-purple-regular;
+    background: none;
+    padding: 0.6rem 0.5rem;
+    margin: 1rem;
+  }
 }
 
 .founder-container {
@@ -47,7 +66,7 @@
 }
 
 .founder-header {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .founder-image {
