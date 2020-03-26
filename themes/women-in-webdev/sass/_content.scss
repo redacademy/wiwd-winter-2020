@@ -69,14 +69,37 @@ background-color: $color__background-pre;
 		.footer-info{
 			flex: 0 1 50%;
 			@include desktop() {
-				flex: 0 1 30%;
+				flex: 0 1 33%;
 				}
+			h3{
+				margin-bottom: 0;
+				&:nth-child(2){
+					margin-top: 0;
+				}
+			}
+			li{
+				&:first-child{
+					padding-top: $base__space-unit /4 ;
+				}
+			}	
 		}
-		.footer-socials{
+		.find-us-class{
 			flex: 0 1 50%;
+			text-align: center;
 			@include desktop() {
-				flex: 0 1 30%;
+				flex: 0 1 33%;
+				text-align: left;
 				}
+			i{
+				fill: #fff;
+				color: #fff;
+				padding: 0 $base__space-unit /2 ;
+				font-size: 1.5rem;
+				&:first-child{
+					padding-left: 0;
+				}
+			
+			}	
 			button{
 				width: 100%;
 				background-color: $color_feature-coral;
@@ -85,7 +108,7 @@ background-color: $color__background-pre;
 		.footer-sign-up{
 			flex: 0 1 100%;
 			@include desktop() {
-				flex: 0 1 35%;
+				flex: 0 1 33%;
 				}
 		}
 	}
@@ -97,5 +120,6 @@ background-color: $color__background-pre;
 		color: $color_feature-coral;
 	}
 }
+
 
 
