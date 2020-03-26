@@ -82,6 +82,24 @@ function WIWD_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	));
+	register_sidebar(array(
+		'name'          => esc_html('legal-info'),
+		'id'            => 'legal-info',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar(array(
+		'name'          => esc_html('email_signup'),
+		'id'            => 'email_signup',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
 
 }
 add_action( 'widgets_init', 'WIWD_widgets_init' );

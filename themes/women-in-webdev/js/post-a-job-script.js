@@ -1,4 +1,7 @@
 (function ($) {
+    //for footer
+    $('#menu-legal-info-menu').addClass('ul-no-style');
+    //
     let fullTitle = $('.gf_progressbar_title');
     let changedTitle = fullTitle[0].innerText.replace(/Step 1 of 3 -|Step 2 of 3 -|Step 3 of 3 -/g, '');
     let titleWrapper = $('.gf_progressbar_wrapper').empty();
