@@ -1,6 +1,21 @@
-.about-banner {
+.banner-container {
   background-color: $color_background-body;
+  width: 100vw;
 }
+
+.max-width-container {
+  margin: 0 auto;
+  max-width: 1024px !important;
+}
+
+// .about-banner {
+//   background-color: $color_background-body;
+// }
+
+// .about-image-column {
+//   padding-top: 5rem;
+//   padding-bottom: 5rem;
+// }
 
 .stacked-column {
   background-color: $color_background-body;
@@ -10,12 +25,12 @@
   background-color: $color_background-light;
 }
 
-.about-text-column {
-  padding-top: 5rem;
-  padding-left: 5rem;
-  padding-bottom: 5rem;
-  text-align: left;
-}
+// .about-text-column {
+//   padding-top: 5rem;
+//   padding-left: 5rem;
+//   padding-bottom: 5rem;
+//   text-align: left;
+// }
 
 .about-column-container {
   display: flex;
