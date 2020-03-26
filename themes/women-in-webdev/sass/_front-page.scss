@@ -7,9 +7,6 @@
   //   }
   .site {
     background-color: $color_background-light;
-    @include desktop {
-      width: $desktop-width;
-    }
   }
   .entry-header {
     visibility: hidden;
