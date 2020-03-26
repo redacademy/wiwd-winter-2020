@@ -22,7 +22,7 @@
      <div class="social-button">         
         <p>
             <?php if (strlen(trim($facebook_group)) > 0) : ?>
-            <?php echo "<a href = '$facebook_group'>"?><button>test</button> </a>
+            <?php echo "<a href = '$facebook_group'>"?><button>Join the Facebook group</button> </a>
             <?php endif; ?>
         </p>
      </div>

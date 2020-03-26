@@ -104,12 +104,24 @@ background-color: $color__background-pre;
 				&:first-child{
 					padding-left: 0;
 				}
-			
+				@include desktop(){
+					font-size: 1.65rem;
+				}
 			}	
 			button{
 				width: 100%;
 				background-color: $color_feature-coral;
+				font-size: 1em;
+				padding-top: $base__space-unit/1.5;
+				padding-bottom: $base__space-unit/1.5;
+				@include desktop(){
+					width: auto;
+				}
 			}
+			
+		}
+		.social-icons{
+			padding-top: 12px;
 		}
 		.footer-sign-up{
 			flex: 0 1 100%;
@@ -120,10 +132,40 @@ background-color: $color__background-pre;
 			@include desktop() {
 				flex: 0 1 35%;
 				}
+				.top_label{
+					padding-top: 0;
+					margin-top: 16px;
+				}
+			#input_1_1{
+				padding-bottom: 0;
+				margin-top: 6px !important;
+				font-size: 1.15rem;
+			}
+			#gform_submit_button_1{
+				width: 25%;
+				@include desktop(){
+					width: 50%;
+					padding-top: $base__space-unit/1.5;
+					padding-bottom: $base__space-unit/1.5;
+				}
+			}
+			.form-no-title{
+				margin-top: 0 !important;
+			} 
+			.gform_heading,.gform_description{
+				margin-bottom: 0 !important;
+			}
+			.gform_wrapper .left_label li.hidden_label input{
+				margin-top: 0 !important;
+			}
+			.gform_wrapper .top_label div.ginput_container{
+				margin-top: 0 !important;
+			}	
 		}
 	}
 	input[type="email"]{
 		width: 100%;
+		height: 350px;
 		margin-bottom: $base__space-unit/1.25;
 	}
 	a{
