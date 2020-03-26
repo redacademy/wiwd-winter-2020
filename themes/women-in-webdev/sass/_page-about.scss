@@ -10,17 +10,30 @@
   display: flex;
 }
 
-.join-btn {
-  border-radius: 4px;
-  border: 3px solid $color_feature-purple-regular;
-  background: none;
-  padding: 0.6rem 0.5rem;
-  margin: 1rem;
+.support-title {
+  font-size: 36px;
 }
+
+.about-h3 {
+  font-size: 36px;
+}
+
+.wp-block-button__link {
+  padding: 0.2rem 1.5rem;
+}
+
+// .join-btn {
+//   border-radius: 4px;
+//   border: 3px solid $color_feature-purple-regular;
+//   background: none;
+//   padding: 0.6rem 0.5rem;
+//   margin: 1rem;
+// }
 
 .membership-container {
   margin-bottom: 0px;
   background-color: $color_background-body;
+  padding: 90px;
 }
 
 .newsletter-container {
