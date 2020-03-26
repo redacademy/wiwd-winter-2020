@@ -10,7 +10,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div class= "max-width-container">
+			<main id="main" class="site-main" role="main">
 
 		<div class="banner-image">
 			<img src="<?php echo get_template_directory_uri();?>/assets/illustrations/Training_Header.svg">
@@ -57,7 +58,8 @@ get_header(); ?>
 				</div><!-- #post-container -->
 			</div><!-- #training-page -->
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	</div><!-- #max-width -->
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
