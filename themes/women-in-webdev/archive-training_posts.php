@@ -26,8 +26,15 @@ get_header(); ?>
 	<div class= "post-container">
 
 		<div class="post-layout">
+			<div class="title-button">
 			<?php the_title( '<h2 class="entry-title"> ', '</h2>' ); ?>
 
+				<div class="btn-flex">
+						<a class= "apply-btn" href= "<?php if( get_field('external_link') ): ?>
+							<?php the_field('external_link'); ?>
+							<?php endif; ?>">Apply</a>
+					</div><!-- #btn-flex -->
+				</div><!-- #title-button -->
 
 				<h3 class = "post-location">
 					<?php if( get_field('training_location') ): ?>
@@ -41,15 +48,7 @@ get_header(); ?>
 
 						<div class="post">
 
-							<div class="btn-flex">
-		
-								
-									<a class= "apply-btn" href= "<?php if( get_field('external_link') ): ?>
-											<?php the_field('external_link'); ?>
-									<?php endif; ?>" target="_blank">Apply</a>
 							
-							
-							</div><!-- #btn-flex -->
 						</div>
 
 					</div> <!-- #post-layout -->
