@@ -11,7 +11,7 @@ input[type="submit"] {
 	background-color: $color_feature-teal-medium;
 	color: #fff;
 	border: none;
-	border-radius: 3px;
+	border-radius:7px;
 	@include font-size(0.75);
 	line-height: 1;
 	padding: .75rem 1rem .75rem;
