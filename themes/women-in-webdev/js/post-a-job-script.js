@@ -13,19 +13,28 @@
         //first page hidden
         if (firstTitle.css('display') == 'none') {
             $(".gf-job-first-title").css('display', "inline");
+            $(".gf-job-first-separator").css('display', "block");
         }else{
             $(".gf-job-first-title").css('display', 'none');
+            $(".gf-job-first-separator").css('display', "none");
         }
         //second page hidden
         if (secondTitle.css('display') == 'none') {
             $(".gf-job-second-title").css('display', "inline");
+            $(".gf-job-second-separator").css('display', "block");
         }else{
             $(".gf-job-second-title").css('display', 'none');
+            $(".gf-job-second-separator").css('display', "none");
         }
         //thrid page hidden
         if (thridTitle.css('display') == 'none') {
             $(".gf-job-thrid-title").css('display', "inline");
+            $(".gf-job-thrid-separator").css('display', "block");
         }else{
             $(".gf-job-thrid-title").css('display', 'none');
+            $(".gf-job-thrid-separator").css('display', "none");
+            $(".gf-job-second-title").css('display', 'none');
+            $(".gf-job-second-separator").css('display', "none");
+            $( "#gform_3" ).before('<h2 class="gf-job-second-title" style="display: inline;">2 . What is the job?</h2> <hr class="wp-block-separator gf-job-second-separator" style="display: block;">');
         }
 })(jQuery);
