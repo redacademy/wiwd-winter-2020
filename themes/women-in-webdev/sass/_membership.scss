@@ -5,8 +5,9 @@
     // width: 1400px;
     // display: flex;
     // justify-content: center;
-    .site {
+    .site-content {
       background-color: $color_background-light;
+      width: $desktop-width;
     }
   }
   .entry-header {
