@@ -13,8 +13,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php $stuff=the_content(); ?>
 		<?php
+			var_dump($stuff);
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
